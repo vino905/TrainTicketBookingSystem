@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "5caf9593-b381-4b7c-b0e7-0d4fb2d29b42",
+		"name": "TrainTicket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Purchase Ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/purchase?fromLocation=Pune&toLocation=Mumbai&firstName=Karan &lastName=Kalwani&email=Karankalwani@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"purchase"
+					],
+					"query": [
+						{
+							"key": "fromLocation",
+							"value": "Pune"
+						},
+						{
+							"key": "toLocation",
+							"value": "Mumbai"
+						},
+						{
+							"key": "firstName",
+							"value": "Karan "
+						},
+						{
+							"key": "lastName",
+							"value": "Kalwani"
+						},
+						{
+							"key": "email",
+							"value": "Karankalwani@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/details/allticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"details",
+						"allticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTicketDetailsByID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/remove/5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"remove",
+						"5000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
